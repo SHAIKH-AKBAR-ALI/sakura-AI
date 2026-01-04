@@ -1,0 +1,70 @@
+/* Dark Theme Base */
+.stApp {
+    background-color: #141414;
+    color: #e5e5e5;
+}
+
+/* Hero Title */
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #db0000, #831010);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Anime Card Container */
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Individual Card */
+.anime-card {
+    background: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 100%;
+    position: relative;
+}
+.anime-card:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Card Image */
+.anime-card img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.anime-info {
+    padding: 10px;
+}
+.anime-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+}
+.anime-meta {
+    font-size: 0.7rem;
+    color: #a3a3a3;
+}
+
+/* Chat Styling */
+.stChatMessage {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+}

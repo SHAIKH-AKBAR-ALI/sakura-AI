@@ -1,0 +1,10 @@
+langchain
+langchain-community
+langchain-groq
+langchain-openai
+langchain-chroma
+streamlit
+pandas
+python-dotenv
+sentence-transformers
+langchain-huggingface

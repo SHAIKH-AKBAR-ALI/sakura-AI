@@ -26,8 +26,8 @@ class AnimeRecommendationPipeline:
             retriever = vector_builder.load_vector_store().as_retriever()
 
             # Get API key and model name directly from environment
-            api_key = os.getenv("OPENAI_API_KEY")
-            model_name = "gpt-4o-mini"
+            api_key = os.getenv("GROQ_API_KEY")
+            model_name = "llama-3.1-8b-instant"
             
             self.recommender = AnimeRecommender(retriever, api_key, model_name)
 

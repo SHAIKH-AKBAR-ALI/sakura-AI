@@ -1,9 +1,9 @@
-from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 from src.prompt_template import get_anime_prompt
 
 class AnimeRecommender:
-    def __init__(self,retriever,api_key:str,model_name:str="gpt-4o-mini"):
-        self.llm = ChatOpenAI(api_key=api_key, model=model_name, temperature=0)
+    def __init__(self,retriever,api_key:str,model_name:str="llama-3.1-8b-instant"):
+        self.llm = ChatGroq(api_key=api_key, model=model_name, temperature=0)
         self.prompt = get_anime_prompt()
         self.retriever = retriever
 

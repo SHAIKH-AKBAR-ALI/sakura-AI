@@ -16,14 +16,13 @@ spec:
     spec:
       containers:
       - name: llmops-container
-        image: llmops-app:latest  # Use local image
-        imagePullPolicy: IfNotPresent
+        image: llmops-app:latest
+        imagePullPolicy: Never
         ports:
           - containerPort: 8501
         envFrom:
           - secretRef:
-              name: llmops-secrets 
-
+              name: llmops-secrets
 ---
 apiVersion: v1
 kind: Service
